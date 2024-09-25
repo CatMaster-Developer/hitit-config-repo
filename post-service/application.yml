@@ -1,0 +1,22 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: POST-SERVICE
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/hititpost?createDatabaseIfNotExist=true
+    username: etlee
+    password: 1234
+
+eureka:
+  client:
+    service-url:
+      defaultZone : http://localhost:8761/eureka/
