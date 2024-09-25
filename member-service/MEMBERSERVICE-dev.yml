@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: MEMBER-SERVICE
+    name: MEMBERSERVICE
   profiles:
     active: dev
   config:
