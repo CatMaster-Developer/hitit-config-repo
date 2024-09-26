@@ -3,12 +3,10 @@ server:
 
 spring:
   application:
-    name: MEMBER-SERVICE
+    name: member-service
     file: member-service.yml
     profile: default
 
-  profiles:
-    active: dev
 
   config:
     import: optional:configserver:http://localhost:8888
