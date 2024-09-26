@@ -9,6 +9,9 @@ spring:
     import: optional:configserver:http://localhost:8888
 
 
+    
+
+
   jpa:
     database-platform: org.hibernate.dialect.MySQL8Dialect
     show-sql: true
