@@ -4,10 +4,15 @@ server:
 spring:
   application:
     name: MEMBER-SERVICE
-  # profiles:
-  #   active: default
+    file: member-service.yml
+    profile: default
+
+  profiles:
+    active: dev
+
   config:
     import: optional:configserver:http://localhost:8888
+
 
   jpa:
     database-platform: org.hibernate.dialect.MySQL8Dialect
